@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lecture on SophBG</title>
+    <link>http://localhost:1313/MasterVAR-HCI-blog/tags/lecture/</link>
+    <description>Recent content in Lecture on SophBG</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Oct 2025 22:47:20 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/MasterVAR-HCI-blog/tags/lecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homework 1</title>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/hw1/</link>
+      <pubDate>Sun, 12 Oct 2025 22:47:20 +0200</pubDate>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/hw1/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

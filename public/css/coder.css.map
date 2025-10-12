@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder.css",
-	"sourceRoot": "/home/sophia/mastervar/hci/hciblog",
+	"sourceRoot": "/home/sophia/mastervar/hci/MasterVAR-HCI-blog",
 	"sources": [
 		"themes/hugo-coder/assets/scss/coder.scss",
 		"themes/hugo-coder/assets/scss/css/normalize.css",
