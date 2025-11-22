@@ -15,7 +15,7 @@ series = []
 
 In this post, I document examples of good and bad affordances that appear in daily life and explain how design decisions can affect usability.
 
-## 🟢 Good Affordance
+## Good Affordance
 
 The handle of a mug is a great example of an effective affordance.
 Its curved shape naturally invites the user to grasp or hold it. Even without instructions, you immediately understand how to interact with it.
@@ -25,7 +25,7 @@ Its curved shape naturally invites the user to grasp or hold it. Even without in
 This is a good affordance because the physical form clearly communicates the intended action.
 The design itself guides behavior, you don't need to think or read instructions. The interaction feels intuitive.
 
-## 🔴 Bad Affordance
+## Bad Affordance
 
 A classic example of poor affordance is a door with a vertical bar handle on the push side.
 The handle visually suggests pulling, but the correct action is to push. This mismatch between appearance and function leads to confusion and hesitation.
@@ -40,7 +40,7 @@ To fix this, the vertical handle could be replaced with a flat plate, signaling 
 
 Below are two examples of Gestalt principles that are poorly applied in digital environments, leading to confusion and reduced usability.
 
-# 📰 News Website - Le Parisien
+# News Website - Le Parisien
 <div align="center"> <img src="images/leparisien.png" alt="Le Parisien homepage layout" style="width:80%; max-width:700px; margin:auto; display:block;"> </div>
 
 On the homepage of Le Parisien, several Gestalt principles are violated:
@@ -51,7 +51,7 @@ Law of Similarity: Advertisements and news content share similar colors and font
 
 How to fix it: Add more spacing between news sections, use consistent alignment, and visually differentiate ads. For example, with background shading or clear "Advertisement" labels.
 
-# 💬 Reddit Comment Section
+# Reddit Comment Section
 <div align="center"> <img src="images/reddit.png" alt="Reddit comment hierarchy" style="width:80%; max-width:700px; margin:auto; display:block;"> </div>
 
 In Reddit's comment interface, the Law of Continuity and Law of Proximity are partially violated.
@@ -66,7 +66,7 @@ This would improve readability and make the hierarchy more visually intuitive.
 Dark patterns are interface tricks that manipulate user behavior.
 Below are two examples and suggestions for ethical redesigns.
 
-# 🎭 Interface Interference - Spotify Email Design
+# Interface Interference - Spotify Email Design
 <div align="center"> <img src="images/spotifyemail.png" alt="Spotify promotional email" style="width:40%; max-width:700px; margin:auto; display:block;"> </div>
 
 What it is: It’s very easy to click on the main action the company wants, but much harder to find or perform the opposite action. The interface visually guides the user in one direction.
@@ -75,7 +75,7 @@ Example in daily life: The "Spotify Premium" promotional email shows a big and c
 
 How to redesign: Keep the promotional button visible, but also make the unsubscribe option more accessible. For example, a clear "Unsubscribe from promotional emails" link in readable size and color.
 
-# 🕊️ Nagging - Duolingo Notifications
+# Nagging - Duolingo Notifications
 <div align="center"> <img src="images/duolingo.png" alt="Duolingo emotional notification" style="width:40%; max-width:500px; margin:auto; display:block;"> </div>
 
 What it is: The interface uses guilt or emotional pressure to drive engagement.
