@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lecture 11 on SophBG</title>
-    <link>http://localhost:36497/MasterVAR-HCI-blog/tags/lecture-11/</link>
+    <link>http://localhost:46551/MasterVAR-HCI-blog/tags/lecture-11/</link>
     <description>Recent content in Lecture 11 on SophBG</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 15 Nov 2025 22:10:05 +0100</lastBuildDate>
-    <atom:link href="http://localhost:36497/MasterVAR-HCI-blog/tags/lecture-11/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:46551/MasterVAR-HCI-blog/tags/lecture-11/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:36497/MasterVAR-HCI-blog/posts/hw4/</link>
+      <link>http://localhost:46551/MasterVAR-HCI-blog/posts/hw4/</link>
       <pubDate>Sat, 15 Nov 2025 22:10:05 +0100</pubDate>
-      <guid>http://localhost:36497/MasterVAR-HCI-blog/posts/hw4/</guid>
+      <guid>http://localhost:46551/MasterVAR-HCI-blog/posts/hw4/</guid>
       <description></description>
     </item>
   </channel>

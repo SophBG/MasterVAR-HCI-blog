@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lecture 4 on SophBG</title>
-    <link>http://localhost:36497/MasterVAR-HCI-blog/tags/lecture-4/</link>
+    <link>http://localhost:46551/MasterVAR-HCI-blog/tags/lecture-4/</link>
     <description>Recent content in Lecture 4 on SophBG</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Nov 2025 22:09:57 +0100</lastBuildDate>
-    <atom:link href="http://localhost:36497/MasterVAR-HCI-blog/tags/lecture-4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Sep 2025 22:09:57 +0100</lastBuildDate>
+    <atom:link href="http://localhost:46551/MasterVAR-HCI-blog/tags/lecture-4/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://localhost:36497/MasterVAR-HCI-blog/posts/hw2/</link>
-      <pubDate>Sat, 15 Nov 2025 22:09:57 +0100</pubDate>
-      <guid>http://localhost:36497/MasterVAR-HCI-blog/posts/hw2/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;hci-researcher-jacob-o-wobbrock&#34;&gt;&#xA;  HCI Researcher: Jacob O. Wobbrock&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#hci-researcher-jacob-o-wobbrock&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;For this topic, I explored the work of Jacob O. Wobbrock, a leading researcher in Human Computer Interaction and a professor at the University of Washington. What makes Wobbrock&amp;rsquo;s work stand out is his long term dedication to understanding how people interact with computers in the real world, especially people with diverse abilities.&lt;/p&gt;&#xA;&lt;div align=&#34;center&#34;&gt; &lt;img src=&#34;images/wobbrock.png&#34; alt=&#34;Jacob O. Wobbrock&#34; style=&#34;width:40%; max-width:500px; margin:auto; display:block;&#34;&gt; &lt;/div&gt;&#xA;&lt;p&gt;His research consistently asks a simple but fundamental question: What if technology adapted to us instead of forcing us to adapt to it?&lt;/p&gt;</description>
+      <title>HCI ideas over the time</title>
+      <link>http://localhost:46551/MasterVAR-HCI-blog/posts/hw2/</link>
+      <pubDate>Thu, 25 Sep 2025 22:09:57 +0100</pubDate>
+      <guid>http://localhost:46551/MasterVAR-HCI-blog/posts/hw2/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;hci-researcher-jacob-o-wobbrock&#34;&gt;&#xA;  HCI Researcher: Jacob O. Wobbrock&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#hci-researcher-jacob-o-wobbrock&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;For this topic, I explored the work of Jacob O. Wobbrock, a leading researcher in Human Computer Interaction and a professor at the University of Washington. What makes Wobbrock&amp;rsquo;s work stand out is his long term dedication to understanding how people interact with computers in the real world, especially people with diverse abilities.&lt;/p&gt;&#xA;&lt;div align=&#34;center&#34;&gt; &lt;img src=&#34;images/wobbrock.png&#34; alt=&#34;Jacob O. Wobbrock&#34; style=&#34;width:100%; max-width:500px; margin:auto; display:block;&#34;&gt; &lt;/div&gt;&#xA;&lt;p&gt;His research consistently asks a simple but fundamental question: What if technology adapted to us instead of forcing us to adapt to it?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
