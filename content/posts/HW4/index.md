@@ -1,5 +1,5 @@
 +++ 
-date = 2025-11-15T22:10:05+01:00
+date = 2025-10-09T22:10:05+01:00
 title = "The Evolving Shape of Technology"
 description = "Homework 4"
 slug = ""
