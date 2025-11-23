@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lecture 8 on SophBG</title>
-    <link>http://localhost:46551/MasterVAR-HCI-blog/tags/lecture-8/</link>
+    <link>http://localhost:41867/MasterVAR-HCI-blog/tags/lecture-8/</link>
     <description>Recent content in Lecture 8 on SophBG</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Nov 2025 22:10:01 +0100</lastBuildDate>
-    <atom:link href="http://localhost:46551/MasterVAR-HCI-blog/tags/lecture-8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Oct 2025 22:10:01 +0100</lastBuildDate>
+    <atom:link href="http://localhost:41867/MasterVAR-HCI-blog/tags/lecture-8/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://localhost:46551/MasterVAR-HCI-blog/posts/hw3/</link>
-      <pubDate>Sat, 15 Nov 2025 22:10:01 +0100</pubDate>
-      <guid>http://localhost:46551/MasterVAR-HCI-blog/posts/hw3/</guid>
+      <title>Ideation and prototyping of AR</title>
+      <link>http://localhost:41867/MasterVAR-HCI-blog/posts/hw3/</link>
+      <pubDate>Thu, 02 Oct 2025 22:10:01 +0100</pubDate>
+      <guid>http://localhost:41867/MasterVAR-HCI-blog/posts/hw3/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;ideation&#34;&gt;&#xA;  Ideation&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#ideation&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;For this post, I explored how augmented reality could enhance human abilities in everyday scenarios.&lt;br&gt;&#xA;To do this, I generated three distinct concept sketches, each representing a different form of augmentation: memory, physical skills, and emotional awareness.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-ar-memory-assistant&#34;&gt;&#xA;  1. AR Memory Assistant&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-ar-memory-assistant&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This concept overlays contextual information about the people we meet.&lt;br&gt;&#xA;It aims to support social memory, helping users recall names and past conversations.&lt;/p&gt;</description>
     </item>
   </channel>
