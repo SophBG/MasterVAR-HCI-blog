@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on SophBG</title>
-    <link>http://localhost:42509/MasterVAR-HCI-blog/tags/blog/</link>
+    <link>http://localhost:39309/MasterVAR-HCI-blog/tags/blog/</link>
     <description>Recent content in Blog on SophBG</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Oct 2025 22:10:05 +0100</lastBuildDate>
-    <atom:link href="http://localhost:42509/MasterVAR-HCI-blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:39309/MasterVAR-HCI-blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Built My Website Using Hugo</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/posts/lab1/</link>
-      <pubDate>Thu, 09 Oct 2025 22:10:05 +0100</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/posts/lab1/</guid>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/posts/lab3/</link>
+      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/posts/lab3/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;how-i-built-my-hugo-website&#34;&gt;&#xA;  How I Built My Hugo Website&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#how-i-built-my-hugo-website&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;(Blog Setup)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this post, I document the complete process I followed to create my personal website using &lt;strong&gt;Hugo&lt;/strong&gt;, a static site generator. This includes installation, theme setup, writing content, and deployment.&lt;br&gt;&#xA;These notes are based on the class material from the HCI course from the Master VAR.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-create-a-website&#34;&gt;&#xA;  Why Create a Website?&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#why-create-a-website&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Creating a website is more than a technical exercise:&lt;/p&gt;</description>
     </item>
   </channel>

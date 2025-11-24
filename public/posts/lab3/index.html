@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/MasterVAR-HCI-blog/livereload.js?mindelay=10&amp;v=2&amp;port=39309&amp;path=MasterVAR-HCI-blog/livereload" data-no-instant defer></script>
+  <title>
+  My Pipeline for Creating a Unity Renderer Using 3D Gaussian Splatting · SophBG
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Sophia DE BRITO GUIRARDELLO">
+<meta name="description" content="Lab Unity Gaussian Splat">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My Pipeline for Creating a Unity Renderer Using 3D Gaussian Splatting">
+  <meta name="twitter:description" content="Lab Unity Gaussian Splat">
+
+<meta property="og:url" content="http://localhost:39309/MasterVAR-HCI-blog/posts/lab3/">
+  <meta property="og:site_name" content="SophBG">
+  <meta property="og:title" content="My Pipeline for Creating a Unity Renderer Using 3D Gaussian Splatting">
+  <meta property="og:description" content="Lab Unity Gaussian Splat">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-18T00:00:00+00:00">
+    <meta property="article:tag" content="Gaussian-Splatting">
+    <meta property="article:tag" content="Unity">
+
+
+
+
+<link rel="canonical" href="http://localhost:39309/MasterVAR-HCI-blog/posts/lab3/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/MasterVAR-HCI-blog/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/MasterVAR-HCI-blog/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:39309/MasterVAR-HCI-blog/">
+      SophBG
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/MasterVAR-HCI-blog/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/MasterVAR-HCI-blog/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/MasterVAR-HCI-blog/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:39309/MasterVAR-HCI-blog/posts/lab3/">
+              My Pipeline for Creating a Unity Renderer Using 3D Gaussian Splatting
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-09-18T00:00:00Z">
+                September 18, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/MasterVAR-HCI-blog/authors/sophia/">Sophia</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/MasterVAR-HCI-blog/categories/lab/">Lab</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/MasterVAR-HCI-blog/tags/gaussian-splatting/">Gaussian-Splatting</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/MasterVAR-HCI-blog/tags/unity/">Unity</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <hr>
+<h1 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>In this lab, I implemented a full <strong>3D Gaussian Splatting</strong> pipeline and imported the resulting model into <strong>Unity</strong> for real-time rendering.<br>
+Gaussian splats have become a powerful alternative to mesh-based rendering, enabling high-quality neural radiance fields using millions of anisotropic Gaussians instead of polygons.</p>
+<p>This post documents the entire workflow I used, from data capture to reconstruction to the final Unity renderer.</p>
+<hr>
+<h1 id="image-acquisition-setup">
+  Image Acquisition Setup
+  <a class="heading-link" href="#image-acquisition-setup">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>All images used to generate the Gaussian splat were captured inside a <strong>studio with multiple cameras positioned around a central target</strong>.</p>
+<p>The system was arranged in a 360° configuration, and <strong>the photos, as well as the resulting 3D model, were created around me</strong>.<br>
+This produced highly consistent viewpoints and lighting, which is ideal for 3D reconstruction and splatting.</p>
+<div align="center"> <img src="images/image-capture.jpg" alt="Image Capture Setup" style="width:100%; max-width:500px; margin:auto; display:block;"> </div>
+<hr>
+<h1 id="reconstruction-pipeline">
+  Reconstruction Pipeline
+  <a class="heading-link" href="#reconstruction-pipeline">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>My Gaussian Splatting pipeline follows four major steps:</p>
+<h3 id="1-colmap---point-cloud">
+  <strong>1. COLMAP - Point Cloud</strong>
+  <a class="heading-link" href="#1-colmap---point-cloud">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I started with <strong>COLMAP</strong>, running it at the highest possible quality settings for:</p>
+<ul>
+<li>Feature extraction</li>
+<li>Feature matching</li>
+<li>Sparse reconstruction</li>
+</ul>
+<p>This step generated the camera positions and point cloud necessary for the Gaussian splatting construction.</p>
+<div align="center"> <img src="images/colmap.png" alt="COLMAP" style="width:100%; max-width:500px; margin:auto; display:block;"> </div>
+<h3 id="2-brush---gaussian-splatting">
+  <strong>2. Brush - Gaussian Splatting</strong>
+  <a class="heading-link" href="#2-brush---gaussian-splatting">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>After COLMAP, I processed the model with <strong>Brush</strong> (also at maximum quality).<br>
+This step generated the gaussian splats and ply file.</p>
+<div align="center"> <img src="images/brush.png" alt="Brush" style="width:100%; max-width:500px; margin:auto; display:block;"> </div>
+<h3 id="3-supersplat---environment-cleanup">
+  <strong>3. Supersplat - Environment Cleanup</strong>
+  <a class="heading-link" href="#3-supersplat---environment-cleanup">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Next, I used <strong>Supersplat</strong> to:</p>
+<ul>
+<li>Clean unwanted background geometry</li>
+<li>Remove floating points</li>
+<li>Keep only the subject-centered reconstruction</li>
+</ul>
+<p>This step is crucial for preparing the final splat asset for rendering.</p>
+<div align="center"> <img src="images/supersplat1.png" alt="Supersplat before" style="width:100%; max-width:500px; margin:auto; display:block;"> </div>
+<div align="center"> <img src="images/supersplat2.png" alt="Supersplat After" style="width:100%; max-width:500px; margin:auto; display:block;"> </div>
+<h3 id="4-preparing-the-gaussian-splat-for-unity">
+  <strong>4. Preparing the Gaussian Splat for Unity</strong>
+  <a class="heading-link" href="#4-preparing-the-gaussian-splat-for-unity">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>To get the splat into Unity, I followed the workflow from the slides shared in the HCI course from the Master VAR (based on a public repository).<br>
+The general steps included:</p>
+<ul>
+<li>Exporting the Gaussian parameters</li>
+<li>Organizing them in the Unity-compatible format</li>
+<li>Configuring the rendering resources</li>
+</ul>
+<hr>
+<h1 id="rendering-gaussian-splats-in-unity">
+  Rendering Gaussian Splats in Unity
+  <a class="heading-link" href="#rendering-gaussian-splats-in-unity">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>For real-time visualization, I used a Unity project made for Gaussian Splat rendering.<br>
+Following the setup:</p>
+<ol>
+<li>Open this <em><a href="https://github.com/aras-p/UnityGaussianSplatting"  class="external-link" target="_blank" rel="noopener">https://github.com/aras-p/UnityGaussianSplatting</a></em> repository in Unity.</li>
+<li>Create an empty GameObject.</li>
+<li>Add a <strong>GaussianSplatAsset</strong> via<br>
+<code>Tools &gt; Gaussian Splats &gt; Create GaussianSplatAsset</code></li>
+<li>Add the component <strong>GaussianSplatRenderer</strong> to the same object.</li>
+<li>Assign the exported splat data.</li>
+</ol>
+<p>Once configured, Unity loads and renders the full set of Gaussians, millions of them, in real time.</p>
+<div align="center"> <img src="images/unity.png" alt="Unity" style="width:100%; max-width:500px; margin:auto; display:block;"> </div>
+<hr>
+<h1 id="final-thoughts">
+  Final Thoughts
+  <a class="heading-link" href="#final-thoughts">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>This pipeline combines traditional multi-view geometry with modern neural rendering methods.<br>
+The combination of COLMAP, Brush, and Supersplat produces a clean and highly detailed reconstruction, and Unity provides an excellent playground for real-time visualization.</p>
+<p>Working with data captured in a multi-camera studio, especially one built around a human subject, makes the result even more compelling, as the splat truly represents a volumetric snapshot of a real person.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     Sophia DE BRITO GUIRARDELLO 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/MasterVAR-HCI-blog/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

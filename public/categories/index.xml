@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on SophBG</title>
-    <link>http://localhost:42509/MasterVAR-HCI-blog/categories/</link>
+    <link>http://localhost:39309/MasterVAR-HCI-blog/categories/</link>
     <description>Recent content in Categories on SophBG</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Oct 2025 22:10:05 +0100</lastBuildDate>
-    <atom:link href="http://localhost:42509/MasterVAR-HCI-blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:39309/MasterVAR-HCI-blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HW4</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/hw4/</link>
-      <pubDate>Thu, 09 Oct 2025 22:10:05 +0100</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/hw4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Lab</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/lab/</link>
-      <pubDate>Thu, 09 Oct 2025 22:10:05 +0100</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/lab/</guid>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/hw4/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/hw4/</guid>
       <description></description>
     </item>
     <item>
       <title>Lecture</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/lecture/</link>
-      <pubDate>Thu, 09 Oct 2025 22:10:05 +0100</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/lecture/</guid>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/lecture/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/lecture/</guid>
       <description></description>
     </item>
     <item>
       <title>HW3</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/hw3/</link>
-      <pubDate>Thu, 02 Oct 2025 22:10:01 +0100</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/hw3/</guid>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/hw3/</link>
+      <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/hw3/</guid>
       <description></description>
     </item>
     <item>
       <title>HW2</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/hw2/</link>
-      <pubDate>Thu, 25 Sep 2025 22:09:57 +0100</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/hw2/</guid>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/hw2/</link>
+      <pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/hw2/</guid>
       <description></description>
     </item>
     <item>
       <title>HW1</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/hw1/</link>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/hw1/</link>
       <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/hw1/</guid>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/hw1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lab</title>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/lab/</link>
+      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/lab/</guid>
       <description></description>
     </item>
     <item>
       <title>Demonstração Do Tema</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/demonstra%C3%A7%C3%A3o-do-tema/</link>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/demonstra%C3%A7%C3%A3o-do-tema/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/demonstra%C3%A7%C3%A3o-do-tema/</guid>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/demonstra%C3%A7%C3%A3o-do-tema/</guid>
       <description></description>
     </item>
     <item>
       <title>Sintaxe</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/sintaxe/</link>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/sintaxe/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/sintaxe/</guid>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/sintaxe/</guid>
       <description></description>
     </item>
     <item>
       <title>Syntax</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/syntax/</link>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/syntax/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/syntax/</guid>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/syntax/</guid>
       <description></description>
     </item>
     <item>
       <title>Theme Demo</title>
-      <link>http://localhost:42509/MasterVAR-HCI-blog/categories/theme-demo/</link>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/categories/theme-demo/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:42509/MasterVAR-HCI-blog/categories/theme-demo/</guid>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/categories/theme-demo/</guid>
       <description></description>
     </item>
   </channel>

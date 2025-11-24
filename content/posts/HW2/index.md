@@ -1,5 +1,5 @@
 +++ 
-date = 2025-09-25T22:09:57+01:00
+date = 2025-09-25
 title = "HCI ideas over the time"
 description = "Homework 2"
 slug = ""

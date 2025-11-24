@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity on SophBG</title>
+    <link>http://localhost:39309/MasterVAR-HCI-blog/tags/unity/</link>
+    <description>Recent content in Unity on SophBG</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:39309/MasterVAR-HCI-blog/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Pipeline for Creating a Unity Renderer Using 3D Gaussian Splatting</title>
+      <link>http://localhost:39309/MasterVAR-HCI-blog/posts/lab1/</link>
+      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:39309/MasterVAR-HCI-blog/posts/lab1/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;In this lab, I implemented a full &lt;strong&gt;3D Gaussian Splatting&lt;/strong&gt; pipeline and imported the resulting model into &lt;strong&gt;Unity&lt;/strong&gt; for real-time rendering.&lt;br&gt;&#xA;Gaussian splats have become a powerful alternative to mesh-based rendering, enabling high-quality neural radiance fields using millions of anisotropic Gaussians instead of polygons.&lt;/p&gt;&#xA;&lt;p&gt;This post documents the entire workflow I used, from data capture to reconstruction to the final Unity renderer.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
