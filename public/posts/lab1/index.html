@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/MasterVAR-HCI-blog/livereload.js?mindelay=10&amp;v=2&amp;port=42509&amp;path=MasterVAR-HCI-blog/livereload" data-no-instant defer></script>
+  <title>
+  How I Built My Website Using Hugo · SophBG
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Sophia DE BRITO GUIRARDELLO">
+<meta name="description" content="Lab Hugo Blog">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How I Built My Website Using Hugo">
+  <meta name="twitter:description" content="Lab Hugo Blog">
+
+<meta property="og:url" content="http://localhost:42509/MasterVAR-HCI-blog/posts/lab1/">
+  <meta property="og:site_name" content="SophBG">
+  <meta property="og:title" content="How I Built My Website Using Hugo">
+  <meta property="og:description" content="Lab Hugo Blog">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-09T22:10:05+01:00">
+    <meta property="article:modified_time" content="2025-10-09T22:10:05+01:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Hugo">
+
+
+
+
+<link rel="canonical" href="http://localhost:42509/MasterVAR-HCI-blog/posts/lab1/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/MasterVAR-HCI-blog/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/MasterVAR-HCI-blog/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:42509/MasterVAR-HCI-blog/">
+      SophBG
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/MasterVAR-HCI-blog/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/MasterVAR-HCI-blog/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/MasterVAR-HCI-blog/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:42509/MasterVAR-HCI-blog/posts/lab1/">
+              How I Built My Website Using Hugo
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-10-09T22:10:05&#43;01:00">
+                October 9, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/MasterVAR-HCI-blog/authors/sophia/">Sophia</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/MasterVAR-HCI-blog/categories/lab/">Lab</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/MasterVAR-HCI-blog/tags/blog/">Blog</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/MasterVAR-HCI-blog/tags/hugo/">Hugo</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <hr>
+<h1 id="how-i-built-my-hugo-website">
+  How I Built My Hugo Website
+  <a class="heading-link" href="#how-i-built-my-hugo-website">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p><em>(Blog Setup)</em></p>
+<p>In this post, I document the complete process I followed to create my personal website using <strong>Hugo</strong>, a static site generator. This includes installation, theme setup, writing content, and deployment.<br>
+These notes are based on the class material from the HCI course from the Master VAR.</p>
+<hr>
+<h2 id="why-create-a-website">
+  Why Create a Website?
+  <a class="heading-link" href="#why-create-a-website">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Creating a website is more than a technical exercise:</p>
+<ul>
+<li>It allows me to <strong>share knowledge</strong> with the world.</li>
+<li>It&rsquo;s a place to <strong>tell my story</strong> to employers.</li>
+<li>It showcases <strong>professionalism and maturity</strong> in documentation.</li>
+<li>It becomes a living <strong>portfolio</strong> of all my projects.</li>
+</ul>
+<p>Documentation is crucial:</p>
+<ul>
+<li>write what worked and what didn&rsquo;t</li>
+<li>keep notes</li>
+<li>include screenshots, videos, snippets</li>
+<li><strong>don&rsquo;t try to make it perfect</strong>, just make it work first :contentReference[oaicite:2]{index=2}</li>
+</ul>
+<hr>
+<h2 id="installing-hugo">
+  Installing Hugo
+  <a class="heading-link" href="#installing-hugo">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Hugo runs on macOS, Linux, Windows, BSD - anything that supports Go. I runned mine on Microsoft WSL2</p>
+<h3 id="installing-on-linux">
+  Installing on Linux
+  <a class="heading-link" href="#installing-on-linux">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo snap install hugo
+</span></span></code></pre></div><hr>
+<h2 id="creating-my-hugo-site">
+  Creating My Hugo Site
+  <a class="heading-link" href="#creating-my-hugo-site">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>To create a new site:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new site my-website
+</span></span></code></pre></div><p>This generates the full folder structure automatically (config, content, layouts, etc.)
+Then I navigated into the website folder:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> my-website
+</span></span></code></pre></div><hr>
+<h2 id="adding-a-theme-hugo-coder">
+  Adding a Theme (Hugo Coder)
+  <a class="heading-link" href="#adding-a-theme-hugo-coder">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Hugo sites can be fully customized through themes, which define structure, layouts, and styles.</p>
+<p>I chose <strong>hugo-coder</strong>.</p>
+<p>Before downloading, I ensured git was installed:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install git
+</span></span></code></pre></div><p>Then I added the theme as a submodule:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
+</span></span></code></pre></div><p>Many themes require <strong>Hugo Extended</strong>.
+After installing, I verified the content of the theme:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> themes/hugo-coder
+</span></span><span class="line"><span class="cl">ls -ltr
+</span></span></code></pre></div><p>I copied the example site to my root folder.
+This gave me a working structure including the config.toml template.</p>
+<hr>
+<h2 id="editing-the-website-configuration">
+  Editing the Website Configuration
+  <a class="heading-link" href="#editing-the-website-configuration">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>To edit main settings, I modified the file <strong>config.toml</strong> using VSCode.</p>
+<p>The config file controls:</p>
+<ul>
+<li>site title</li>
+<li>URLs</li>
+<li>languages</li>
+<li>menus and more</li>
+</ul>
+<hr>
+<h2 id="creating-blog-posts">
+  Creating Blog Posts
+  <a class="heading-link" href="#creating-blog-posts">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>To create a new blog post:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new posts/my-first-post.md
+</span></span></code></pre></div><p>By default:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">draft = true
+</span></span></code></pre></div><p>Set it to:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">draft = false
+</span></span></code></pre></div><p>to publish it.</p>
+<hr>
+<h2 id="running-the-website-locally">
+  Running the Website Locally
+  <a class="heading-link" href="#running-the-website-locally">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>To preview the website:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></div><p>Then open:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">http://localhost:1313/
+</span></span></code></pre></div><p>Every change updates automatically in real time.
+This is extremely convenient during development.</p>
+<hr>
+<h2 id="deployment---publishing-to-github-pages">
+  Deployment - Publishing to GitHub Pages
+  <a class="heading-link" href="#deployment---publishing-to-github-pages">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I deployed my site using GitHub Project Pages - a site tied to a specific repo.</p>
+<p>Steps:</p>
+<h3 id="1-create-a-github-repo">
+  1. Create a GitHub repo
+  <a class="heading-link" href="#1-create-a-github-repo">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I created a <em>project</em> repository for my website.</p>
+<h3 id="2-add-all-files">
+  2. Add all files
+  <a class="heading-link" href="#2-add-all-files">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;First commit&#34;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></div><p>If GitHub login gives an error, update scopes as required (token settings)</p>
+<h3 id="3-create-github-actions-workflow">
+  3. Create GitHub Actions workflow
+  <a class="heading-link" href="#3-create-github-actions-workflow">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Inside my repository:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">.github/workflows/hugo.yml
+</span></span></code></pre></div><p>I pasted the recommended Hugo build + deploy action from Hugo&rsquo;s docs</p>
+<h3 id="4-trigger-deployment">
+  4. Trigger Deployment
+  <a class="heading-link" href="#4-trigger-deployment">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>After pushing, I went to: GitHub, Actions, and ran the Deploy workflow.</p>
+<h3 id="5-set-build-output">
+  5. Set Build Output
+  <a class="heading-link" href="#5-set-build-output">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>In GitHub: Settings, Pages, Branch: main</p>
+<p>Finally, I set the site URL:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://SophBG.github.io/MasterVAR-HCI-blog&#34;</span>
+</span></span></code></pre></div><p>After this, the website was live online.</p>
+<hr>
+<h2 id="final-result">
+  Final Result
+  <a class="heading-link" href="#final-result">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>My site is now online, automatically updated via GitHub Actions, fast thanks to Hugo, and structured cleanly because everything is based on Markdown and static files.</p>
+<p>This workflow is simple, robust, and perfect for maintaining a professional portfolio for the HCI course and future projects.</p>
+<p>The project can be found here:
+<a href="https://github.com/SophBG/MasterVAR-HCI-blog"  class="external-link" target="_blank" rel="noopener">https://github.com/SophBG/MasterVAR-HCI-blog</a></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     Sophia DE BRITO GUIRARDELLO 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/MasterVAR-HCI-blog/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
