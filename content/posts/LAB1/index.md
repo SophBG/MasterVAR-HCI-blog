@@ -1,5 +1,5 @@
 +++ 
-date = 2025-10-09
+date = 2025-09-18
 title = "How I Built My Website Using Hugo"
 description = "Lab Hugo Blog"
 slug = ""

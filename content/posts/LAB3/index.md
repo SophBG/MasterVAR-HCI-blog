@@ -1,6 +1,6 @@
 +++ 
-date = 2025-09-18
-title = "My Pipeline for Creating a Unity Renderer Using 3D Gaussian Splatting"
+date = 2025-10-23
+title = "Creating a Unity Renderer Using 3D Gaussian Splatting"
 description = "Lab Unity Gaussian Splat"
 slug = ""
 authors = ["Sophia"]

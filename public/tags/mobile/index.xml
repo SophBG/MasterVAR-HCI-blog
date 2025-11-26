@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mobile on SophBG</title>
+    <link>http://localhost:1313/MasterVAR-HCI-blog/tags/mobile/</link>
+    <description>Recent content in Mobile on SophBG</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 30 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/MasterVAR-HCI-blog/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Mobile Endless Runner in Unity</title>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/lab4/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/lab4/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;overview&#34;&gt;&#xA;  Overview&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#overview&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;This project is based on the same core gameplay loop as my ML-Agents experiment:&lt;br&gt;&#xA;&lt;strong&gt;a character that jumps to avoid randomly generated obstacles moving toward it.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;However, in this version, the goal was to build a &lt;strong&gt;mobile-friendly game&lt;/strong&gt; with UI, menus, and touch controls.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;core-gameplay&#34;&gt;&#xA;  Core Gameplay&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#core-gameplay&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;The player controls a character that can &lt;strong&gt;jump with a single touch&lt;/strong&gt; on the screen.&lt;br&gt;&#xA;Obstacles spawn at random intervals and move toward the character.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,53 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sophia on SophBG</title>
-    <link>http://localhost:39309/MasterVAR-HCI-blog/authors/sophia/</link>
+    <link>http://localhost:1313/MasterVAR-HCI-blog/authors/sophia/</link>
     <description>Recent content in Sophia on SophBG</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:39309/MasterVAR-HCI-blog/authors/sophia/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/MasterVAR-HCI-blog/authors/sophia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Mobile Endless Runner in Unity</title>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/lab4/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/lab4/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;overview&#34;&gt;&#xA;  Overview&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#overview&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;This project is based on the same core gameplay loop as my ML-Agents experiment:&lt;br&gt;&#xA;&lt;strong&gt;a character that jumps to avoid randomly generated obstacles moving toward it.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;However, in this version, the goal was to build a &lt;strong&gt;mobile-friendly game&lt;/strong&gt; with UI, menus, and touch controls.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;core-gameplay&#34;&gt;&#xA;  Core Gameplay&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#core-gameplay&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;The player controls a character that can &lt;strong&gt;jump with a single touch&lt;/strong&gt; on the screen.&lt;br&gt;&#xA;Obstacles spawn at random intervals and move toward the character.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Creating a Unity Renderer Using 3D Gaussian Splatting</title>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/lab3/</link>
+      <pubDate>Thu, 23 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/lab3/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;In this lab, I implemented a full &lt;strong&gt;3D Gaussian Splatting&lt;/strong&gt; pipeline and imported the resulting model into &lt;strong&gt;Unity&lt;/strong&gt; for real-time rendering.&lt;br&gt;&#xA;Gaussian splats have become a powerful alternative to mesh-based rendering, enabling high-quality neural radiance fields using millions of anisotropic Gaussians instead of polygons.&lt;/p&gt;&#xA;&lt;p&gt;This post documents the entire workflow I used, from data capture to reconstruction to the final Unity renderer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Training a Unity Agent using ML-Agents</title>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/lab2/</link>
+      <pubDate>Thu, 16 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/lab2/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;overview&#34;&gt;&#xA;  Overview&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#overview&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;In this project, I created a simple Unity game environment where a character must jump over incoming obstacles generated at random intervals.&#xA;The core mechanics are very similar to endless-runner games: the player can jump, obstacles move toward them, and the goal is to avoid collisions.&lt;/p&gt;&#xA;&lt;p&gt;For this version, the character is controlled entirely by reinforcement learning using &lt;strong&gt;Unity ML-Agents&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;ml-agent-setup&#34;&gt;&#xA;  ML-Agent Setup&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#ml-agent-setup&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;I used the &lt;strong&gt;PPO (Proximal Policy Optimization)&lt;/strong&gt; trainer with &lt;strong&gt;default ML-Agents hyperparameters&lt;/strong&gt;, except for the training duration.&lt;br&gt;&#xA;The model has currently been trained for: 87.130.390 epochs&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Evolving Shape of Technology</title>
-      <link>http://localhost:39309/MasterVAR-HCI-blog/posts/hw4/</link>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/hw4/</link>
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39309/MasterVAR-HCI-blog/posts/hw4/</guid>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/hw4/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;the-shape-of-smartphones&#34;&gt;&#xA;  The Shape of Smartphones&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-shape-of-smartphones&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Smartphones didn&amp;rsquo;t always look like the sleek rectangles we carry today. In the early days, mobile phones came in every shape imaginable: bricks, flips, sliders. Function dictated form. But once touchscreens took over, the industry converged into one shape: a thin rectangle designed to maximize usable screen area.&lt;/p&gt;&#xA;&lt;div align=&#34;center&#34;&gt; &lt;img src=&#34;images/phone-evolution.png&#34; alt=&#34;Evolution of mobile phones&#34; style=&#34;width:100%; max-width:500px; margin:auto; display:block;&#34;&gt; &lt;/div&gt;&#xA;&lt;p&gt;Over the years, this shape has barely changed. Instead, the innovation shifted toward what the shape can do: bend, fold, or stretch. Foldable devices try to solve a simple problem: we want bigger screens without carrying bigger objects. Rollable prototypes push this further by letting the device physically adapt to what we&amp;rsquo;re doing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ideation and prototyping of AR</title>
-      <link>http://localhost:39309/MasterVAR-HCI-blog/posts/hw3/</link>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/hw3/</link>
       <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39309/MasterVAR-HCI-blog/posts/hw3/</guid>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/hw3/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;ideation&#34;&gt;&#xA;  Ideation&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#ideation&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;For this post, I explored how augmented reality could enhance human abilities in everyday scenarios.&lt;br&gt;&#xA;To do this, I generated three distinct concept sketches, each representing a different form of augmentation: memory, physical skills, and emotional awareness.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-ar-memory-assistant&#34;&gt;&#xA;  1. AR Memory Assistant&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-ar-memory-assistant&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This concept overlays contextual information about the people we meet.&lt;br&gt;&#xA;It aims to support social memory, helping users recall names and past conversations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HCI ideas over the time</title>
-      <link>http://localhost:39309/MasterVAR-HCI-blog/posts/hw2/</link>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/hw2/</link>
       <pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39309/MasterVAR-HCI-blog/posts/hw2/</guid>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/hw2/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;hci-researcher-jacob-o-wobbrock&#34;&gt;&#xA;  HCI Researcher: Jacob O. Wobbrock&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#hci-researcher-jacob-o-wobbrock&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;For this topic, I explored the work of Jacob O. Wobbrock, a leading researcher in Human Computer Interaction and a professor at the University of Washington. What makes Wobbrock&amp;rsquo;s work stand out is his long term dedication to understanding how people interact with computers in the real world, especially people with diverse abilities.&lt;/p&gt;&#xA;&lt;div align=&#34;center&#34;&gt; &lt;img src=&#34;images/wobbrock.png&#34; alt=&#34;Jacob O. Wobbrock&#34; style=&#34;width:100%; max-width:500px; margin:auto; display:block;&#34;&gt; &lt;/div&gt;&#xA;&lt;p&gt;His research consistently asks a simple but fundamental question: What if technology adapted to us instead of forcing us to adapt to it?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Affordances, Gestalt Laws and Dark Design Patterns in Daily Life</title>
-      <link>http://localhost:39309/MasterVAR-HCI-blog/posts/hw1/</link>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/hw1/</link>
       <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39309/MasterVAR-HCI-blog/posts/hw1/</guid>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/hw1/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;affordances&#34;&gt;&#xA;  Affordances&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#affordances&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;In this post, I document examples of good and bad affordances that appear in daily life and explain how design decisions can affect usability.&lt;/p&gt;&#xA;&lt;h2 id=&#34;good-affordance&#34;&gt;&#xA;  Good Affordance&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#good-affordance&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The handle of a mug is a great example of an effective affordance.&#xA;Its curved shape naturally invites the user to grasp or hold it. Even without instructions, you immediately understand how to interact with it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Built My Website Using Hugo</title>
-      <link>http://localhost:39309/MasterVAR-HCI-blog/posts/lab3/</link>
+      <link>http://localhost:1313/MasterVAR-HCI-blog/posts/lab1/</link>
       <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39309/MasterVAR-HCI-blog/posts/lab3/</guid>
+      <guid>http://localhost:1313/MasterVAR-HCI-blog/posts/lab1/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;how-i-built-my-hugo-website&#34;&gt;&#xA;  How I Built My Hugo Website&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#how-i-built-my-hugo-website&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;(Blog Setup)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this post, I document the complete process I followed to create my personal website using &lt;strong&gt;Hugo&lt;/strong&gt;, a static site generator. This includes installation, theme setup, writing content, and deployment.&lt;br&gt;&#xA;These notes are based on the class material from the HCI course from the Master VAR.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-create-a-website&#34;&gt;&#xA;  Why Create a Website?&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#why-create-a-website&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Creating a website is more than a technical exercise:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My Pipeline for Creating a Unity Renderer Using 3D Gaussian Splatting</title>
-      <link>http://localhost:39309/MasterVAR-HCI-blog/posts/lab1/</link>
-      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39309/MasterVAR-HCI-blog/posts/lab1/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;In this lab, I implemented a full &lt;strong&gt;3D Gaussian Splatting&lt;/strong&gt; pipeline and imported the resulting model into &lt;strong&gt;Unity&lt;/strong&gt; for real-time rendering.&lt;br&gt;&#xA;Gaussian splats have become a powerful alternative to mesh-based rendering, enabling high-quality neural radiance fields using millions of anisotropic Gaussians instead of polygons.&lt;/p&gt;&#xA;&lt;p&gt;This post documents the entire workflow I used, from data capture to reconstruction to the final Unity renderer.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

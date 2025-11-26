@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/MasterVAR-HCI-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=MasterVAR-HCI-blog/livereload" data-no-instant defer></script>
+  <title>
+  Training a Unity Agent using ML-Agents · SophBG
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Sophia DE BRITO GUIRARDELLO">
+<meta name="description" content="Lab Unity ML-Agents">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Training a Unity Agent using ML-Agents">
+  <meta name="twitter:description" content="Lab Unity ML-Agents">
+
+<meta property="og:url" content="http://localhost:1313/MasterVAR-HCI-blog/posts/lab2/">
+  <meta property="og:site_name" content="SophBG">
+  <meta property="og:title" content="Training a Unity Agent using ML-Agents">
+  <meta property="og:description" content="Lab Unity ML-Agents">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-16T00:00:00+00:00">
+    <meta property="article:tag" content="ML-Agents">
+    <meta property="article:tag" content="Unity">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/MasterVAR-HCI-blog/posts/lab2/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/MasterVAR-HCI-blog/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/MasterVAR-HCI-blog/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/MasterVAR-HCI-blog/">
+      SophBG
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/MasterVAR-HCI-blog/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/MasterVAR-HCI-blog/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/MasterVAR-HCI-blog/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/MasterVAR-HCI-blog/posts/lab2/">
+              Training a Unity Agent using ML-Agents
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-10-16T00:00:00Z">
+                October 16, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/MasterVAR-HCI-blog/authors/sophia/">Sophia</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/MasterVAR-HCI-blog/categories/lab/">Lab</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/MasterVAR-HCI-blog/tags/ml-agents/">ML-Agents</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/MasterVAR-HCI-blog/tags/unity/">Unity</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <hr>
+<h1 id="overview">
+  Overview
+  <a class="heading-link" href="#overview">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>In this project, I created a simple Unity game environment where a character must jump over incoming obstacles generated at random intervals.
+The core mechanics are very similar to endless-runner games: the player can jump, obstacles move toward them, and the goal is to avoid collisions.</p>
+<p>For this version, the character is controlled entirely by reinforcement learning using <strong>Unity ML-Agents</strong>.</p>
+<hr>
+<h1 id="ml-agent-setup">
+  ML-Agent Setup
+  <a class="heading-link" href="#ml-agent-setup">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>I used the <strong>PPO (Proximal Policy Optimization)</strong> trainer with <strong>default ML-Agents hyperparameters</strong>, except for the training duration.<br>
+The model has currently been trained for: 87.130.390 epochs</p>
+<p>I accelerated the learning using <strong>32 parallel environment copies</strong>, significantly reducing total training time.</p>
+<div align="center"> <img src="images/ml-scene.png" alt="ML 32 Env" style="width:100%; max-width:500px; margin:auto; display:block;"> </div>
+<p>The full <code>trainer_config.yaml</code> used:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">default_settings</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">behaviors</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">MLPlayer</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">trainer_type</span><span class="p">:</span><span class="w"> </span><span class="l">ppo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">hyperparameters</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">batch_size</span><span class="p">:</span><span class="w"> </span><span class="m">1024</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">buffer_size</span><span class="p">:</span><span class="w"> </span><span class="m">10240</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">learning_rate</span><span class="p">:</span><span class="w"> </span><span class="m">0.0003</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">beta</span><span class="p">:</span><span class="w"> </span><span class="m">0.005</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">epsilon</span><span class="p">:</span><span class="w"> </span><span class="m">0.2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">lambd</span><span class="p">:</span><span class="w"> </span><span class="m">0.95</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">num_epoch</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">shared_critic</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">learning_rate_schedule</span><span class="p">:</span><span class="w"> </span><span class="l">linear</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">beta_schedule</span><span class="p">:</span><span class="w"> </span><span class="l">linear</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">epsilon_schedule</span><span class="p">:</span><span class="w"> </span><span class="l">linear</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">checkpoint_interval</span><span class="p">:</span><span class="w"> </span><span class="m">500000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">network_settings</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">normalize</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">hidden_units</span><span class="p">:</span><span class="w"> </span><span class="m">128</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">num_layers</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">vis_encode_type</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">memory</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">goal_conditioning_type</span><span class="p">:</span><span class="w"> </span><span class="l">hyper</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">deterministic</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">reward_signals</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">extrinsic</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">gamma</span><span class="p">:</span><span class="w"> </span><span class="m">0.99</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">strength</span><span class="p">:</span><span class="w"> </span><span class="m">1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">network_settings</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">normalize</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">hidden_units</span><span class="p">:</span><span class="w"> </span><span class="m">128</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">num_layers</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">vis_encode_type</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">memory</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">goal_conditioning_type</span><span class="p">:</span><span class="w"> </span><span class="l">hyper</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">deterministic</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">init_path</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">keep_checkpoints</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">even_checkpoints</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">max_steps</span><span class="p">:</span><span class="w"> </span><span class="m">500000000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">time_horizon</span><span class="p">:</span><span class="w"> </span><span class="m">64</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">summary_freq</span><span class="p">:</span><span class="w"> </span><span class="m">50000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">threaded</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">env_settings</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">num_envs</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">engine_settings</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">time_scale</span><span class="p">:</span><span class="w"> </span><span class="m">20.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">no_graphics</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">checkpoint_settings</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">run_id</span><span class="p">:</span><span class="w"> </span><span class="l">ppo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">resume</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div><hr>
+<h1 id="perception-system">
+  Perception System
+  <a class="heading-link" href="#perception-system">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>The agent uses <strong>Ray Perception Sensors</strong> to detect:</p>
+<ul>
+<li>incoming obstacles</li>
+<li>the ground (floor)</li>
+</ul>
+<p>These rays help the agent understand when to jump and how far an obstacle is.</p>
+<div align="center"> <img src="images/ml-env.png" alt="ML Env" style="width:100%; max-width:500px; margin:auto; display:block;"> </div>
+<hr>
+<h1 id="reward-structure">
+  Reward Structure
+  <a class="heading-link" href="#reward-structure">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>To guide learning, I used a simple reward system:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Action / Event</th>
+          <th>Reward</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Successfully avoiding obstacle</td>
+          <td><strong>+0.1</strong></td>
+      </tr>
+      <tr>
+          <td>Jumping (any time)</td>
+          <td><strong>-0.01</strong></td>
+      </tr>
+      <tr>
+          <td>Collision with obstacle</td>
+          <td><strong>-1.0</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>This encourages <em>useful jumps</em> while preventing random spamming of the jump action.</p>
+<hr>
+<h1 id="result">
+  Result
+  <a class="heading-link" href="#result">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Even after tens of millions of training steps, the agent is still <strong>far from perfect</strong>.<br>
+It <strong>misses many obstacles</strong> and doesn&rsquo;t always time its jump correctly. However, it has learned an important behavior: <strong>it only jumps when an obstacle approaches</strong>, and it avoids jumping randomly.</p>
+<p>This shows that the reward system successfully discouraged unnecessary jumps, even if the policy still needs more training to become reliable.</p>
+<div align="center"> <img src="images/ml-run.png" alt="ML Run" style="width:100%; max-width:500px; margin:auto; display:block;"> </div>
+<p>The project can be found here:
+<a href="https://github.com/SophBG/MasterVAR-HCI-MLAgents"  class="external-link" target="_blank" rel="noopener">https://github.com/SophBG/MasterVAR-HCI-MLAgents</a></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     Sophia DE BRITO GUIRARDELLO 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/MasterVAR-HCI-blog/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
